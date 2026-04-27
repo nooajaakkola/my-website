@@ -1,0 +1,134 @@
+body
+{
+  display:flex;
+  justify-content: center;
+  background-image: url('images/rockymountains\ highres.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {color: black; margin: 1vh;}
+h2 {color: black; margin-left: 1vh;}
+p {font-size: large; margin-left: 1vh; margin-right: 1vh;}
+.main-container
+{
+  justify-content: center;
+  display:inline;
+  text-align: center;
+  border-radius: 1vh;
+  background-color: rgba(219, 219, 219, 0.5);
+  width: 75vh;
+  box-shadow: 1vh 1vh 2vh rgb(67, 67, 67);
+}
+
+#title
+{
+  gap: 2vh;
+}
+
+#work-experience
+{
+  width: 45%;
+  display: inline;
+  justify-content: center;
+  text-align: left;
+}
+
+#education
+{
+  display: inline;
+  text-align: left;
+  height:min-content;
+}
+
+#skills
+{
+  
+  display: inline;
+  text-align: left;
+  height:min-content;
+}
+
+#contacts
+{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height:100%;
+}
+
+#contacts-form
+{
+  margin-left: 1vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: fit-content;
+}
+
+#message
+{
+  margin-right: 1vh;
+  resize: none;
+  height: 100%;
+  min-height: 10vh;
+  border-radius: 0.5vh;
+}
+
+#row-skills
+{
+  display: flex;
+  justify-content: left;
+}
+
+.row
+{
+  display: flex;
+  justify-content: left;
+}
+
+.row-vertical
+{
+  display:flex;
+  flex-direction: column;
+}
+
+.infobox
+{
+  margin: 2vh;
+  border-radius: 1vh;
+  box-shadow: 0vh 1vh 2vh rgb(67, 67, 67);
+  display: flex;
+  justify-content: left;
+}
+
+.links
+{
+  width: 100%;
+  justify-content: right;
+  text-align: right;
+  margin: 1vh;
+}
+
+.cv-img
+{
+  width: 20vh;
+  height: 20vh;
+  border-radius: 20vh;
+  margin: 1vh;
+  border: 3px solid rgb(105, 105, 105);
+}
+
+.link-img
+{
+  width: 3vh;
+}
