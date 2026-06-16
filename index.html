@@ -1,189 +1,87 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Nooa Jaakkola</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nooa Jaakkola</title>
+    <link rel="icon" type="image/x-icon" href="imgs/nj_transparent.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="rubik-font">
-    <div class="bg-fixed"></div>
-    <div class="main-container">
-        <div class="infobox" id="title">
-            <img src="images/cv.png" class="cv-img">
-            <div style="text-align: left; width: 100vh; min-width: 20%">
-                <h1 style="font-size: 40; margin-bottom: 0;">
-                    Nooa Jaakkola
-                </h1>
-                <h2 style="margin-top: 1vh; font-size: x-large;">
-                    IT-support specialist 
-                </h2>
-                <p>
-                    Welcome!
-                </p>
-                <p>
-                    I built this website to showcase my achievements and future projects.
-                    I'm always to eager to partner up or work together,
-                    so feel free to message me through the 'Contact me' form.
-                </p>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">nooa<span>j</span>aakkola<span>.</span>com</div>
+            <ul class="nav-links">
+                <li><a href="#info">Who am I?</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-secondary">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <span class="badge">Welcome to my website</span>
+            <h1>Next-Gen digital solutions.</h1>
+            <p>With the goal of paving the path to more modern, high-performance solutions tailored for both corporate- as well as individual clients.</p>
+            <div class="hero-buttons">
+                <a href="#info" class="btn-primary">About me</a>
+                <a href="#contact" class="btn-text">My projects &rarr;</a>
             </div>
-            <span class="links">
-                <a href="https://www.linkedin.com/in/nooa-jaakkola-5395832ba/"><img class="link-img" src="images/LinkedIn_logo_initials_transparent.png" style="margin: 5px;"></a>
-                <a href="https://github.com/nooajaakkola"><img class="link-img" src="images/github_logo.png" style="margin: 5px;"></a>
-            </span>
         </div>
-        <div class="row">
-            <div class="infobox" id="work-experience">
-                <h1 style="margin: 1vh">
-                    Work Experience
-                </h1>
-                <span style="justify-content: left; text-align: left; ">
-                    <h2 style="margin-left: 1vh; margin-bottom: 0.3vh;">
-                        Aftersales operations
-                    </h2>
-                    <h4 style="margin-top: 0; margin-left: 1vh;">Gigantti Klaukkala</h4>
+    </section>
 
-                    <p style="font-size: 18; margin-left: 1vh">
-                        I worked at Gigantti as a service
-                        and customer support specialist for almost 2 years. My core duties were 
-                        device installations and providing 
-                        IT-support to customers. I installed antivirus
-                        software, serviced faulty devices, and resolved various
-                        IT-related issues for both private and business customers.
-                        I got to develop my IT- and customer service skills almost daily by facing 
-                        new technical challenges.
-                    </p>
-                </span>
-
-                <span style="justify-content: left; text-align: left; ">
-                    <h2 style="margin-left: 1vh; margin-bottom: 0.3vh;">
-                        Service desk
-                    </h2>
-                    <h4 style="margin-top: 0; margin-left: 1vh;">Kone Oyj</h4>
-                    <p>
-                        I worked at KONE Oyj for a few months as part of an
-                        internship. There I did system monitoring,
-                        resolving techical issues, and providing on-site
-                        technical support. I prepared devices for use, assembled
-                        networking equipment and, when necessary, visited
-                        different departments to set up workspaces and assist
-                        with various technical problems in person.
-                    </p>
-                </span>
-
-                <span style="justify-content: left; text-align: left; ">
-                    <h2 style="margin-left: 1vh; margin-bottom: 0.3vh;">
-                        Warehouse operator
-                    </h2>
-                    <h4 style="margin-top: 0; margin-left: 1vh;">Kartanon leipä</h4>
-                    <p style="font-size: 18; margin-left: 1vh">
-                        I worked as a warehouse operator at Kartanon Leipä Oy for
-                        just under a year. My responsibilities included distributing
-                        products to various market squares and local markets,
-                        monitoring expiration of products and adjusting
-                        discounts accordingly.
-                    </p>
-                </span>
-                
+    <section class="info" id="info">
+        <div class="section-header">
+            <h2>Who am I?</h2>
+            <p>Currently studying in <span>Centria UAS</span>, further expanding my knowledge of a <span>Software Engineer</span>.</p>
+            <p>I built this website as a showcase of my achievements and projects, as well as a quick and easy way to <span>Contact me</span> in regards to possible <span>collaborations</span>.</p>
+        </div>
+            
+        <div class="grid">
+            <div class="card card-side">
             </div>
-
-            <div class="row-vertical">
-
-                <div class="infobox" id="education">
-                    <h1 style="margin: 1vh;">
-                        Education
-                    </h1>
-
-                    <span style="justify-content: left; text-align: left;">
-                        <h2 style="margin-left: 1vh; margin-bottom: 0;">
-                            Keuda's vocational college
-                        </h2>
-                        <h4 style="margin-left: 1vh; margin-top: 0;">
-                            (2021 - 2024)
-                        </h4>
-                        <p style="font-size: 18; margin-left: 1vh">
-                            Vocational Qualification in Information and
-                            Communications Technology
-                        </p>
-                    </span>
-
-                    <span style="justify-content: left; text-align: left; ">
-                        <h2 style="margin-left: 1vh; margin-bottom: 0">
-                            Centria University of Applied Sciences
-                        </h2>
-                        <h4 style="margin-left: 1vh; margin-top: 0;">
-                            (2025 - present)
-                        </h4>
-                        <p style="font-size: 18; margin-left: 1vh">
-                            Bachelor of Engineering, Information Technology
-                        </p>
-                    </span>
+            <div class="card" style="background-image: url(imgs/noojaakkola_imgcard.jpg);">
+                <div class="card-title">
+                    <h2>Nooa Jaakkola</h2>
+                    <p style="padding-bottom:4px;">Software Engineer</p>
                 </div>
-
-                <div class="infobox" id="skills">
-                    <h1 style="margin: 1vh;">
-                        Skills
-                    </h1>
-                    <div id="row-skills">
-                        <div class="row-vertical">
-                            <h2 style="margin-left: 1vh; margin-bottom: 0; margin-top: 0;">
-                                Programming:
-                            </h2>
-                            <ul style="font-size: large;">
-                                <li>C#</li>
-                                <li>Web development</li>
-                                <li>Vue.js</li>
-                                <li>OOP</li>
-                                <li>SQL-databases</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-
-                        <div class="row-vertical" style="padding-left: 3vh;"> 
-                            <h2 style="margin-left: 1vh; margin-bottom: 0; margin-top: 0;">
-                                Others:
-                            </h2>
-                            <ul style="font-size: large;">
-                                <li>Office 365 applications</li>
-                                <li>Hardware installation and repair</li>
-                                <li>Network device installation</li>
-                                <li>Command line (CLI)</li>
-                                <li>Project management</li>
-                                <li>Troubleshooting</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
                     
-                </div>
-                
-                <div class="infobox" id="contacts">
-                    <h1>
-                        Contact me
-                    </h1>
-
-                    <form
-                        action="https://formspree.io/f/mzdyqzpp"
-                        method="POST"
-                        id="contacts-form"
-                        data-netlify="true"
-                        >
-                        <label style="margin-bottom: 1vh; font-size: large;">
-                            Email:
-                            <input id="email" type="email" name="email" style="border-radius: 0.5vh;">
-                        </label>
-                        <label style="margin-bottom: 5px; font-size: large;">
-                            Message:
-                        </label>
-                        <textarea name="message" id="message"></textarea>
-                        <button type="submit" style="margin-top: 1vh; margin-right: 1vh;">Send</button>
-                    </form>
-                </div>
-                
+            </div>
+            <div class="card card-side">
             </div>
         </div>
-        
-    </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2>My projects</h2>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-row row-1">
+                <div class="project-pic"></div>
+                <div class="project-description"><h3>nooajaakkola.com</h3></div>
+            </div>
+            <div class="project-row row-2"></div>
+            <div class="project-row row-3"></div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Let's build something great together.</h2>
+            <p>Ready to start your next project? Get in touch with us today.</p>
+            <a href="mailto:hello@yourdomain.com" class="btn-primary">Say Hello</a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nooa Jaakkola. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
