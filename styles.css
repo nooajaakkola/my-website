@@ -276,16 +276,18 @@ p span {
 .project-grid {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
 }
 
 .project-row {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width:100%;
-    height: fit-content;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 15vw;
+    min-height: 10vh;
+    max-height: 25vh;
     display: flex;
 
     background-color: var(--card-bg);
@@ -299,47 +301,59 @@ p span {
     border-color: rgba(99, 102, 241, 0.3);
 }
 
-.project-pic {
-    height: min-content;
+.image-container {
     border-radius: 12px;
-    border-right: 1px solid rgba(99, 102, 241, 0.3);
+    height: 100%;
+    min-height: 10vh;
+    max-height: 200px;
+    width: 100vh;
+    min-width: 5rem;
+
+    background-image: url("imgs/projectpic-website.jpg");
+    background-size: cover;
+
 }
 
-.project-pic img {
-    height: 10vw;
-    display: block;
+.project-pic {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+    
 }
 
 .project-description {
     width: auto;
     height: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 
 .project-desc-title {
-    font-size: 1vw;
-    margin-bottom: 0.3vw;   
+    font-size: clamp(0.5rem, 1vw + 1rem, 2rem);
+    margin-bottom: 0.3vw;
 }
 
 .project-desc-description {
     color: var(--text-muted);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .row-1 {
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
 .row-2 {
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
 
 .row-3 {
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 
 
