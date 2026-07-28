@@ -212,7 +212,7 @@ p span {
     background-color: var(--card-bg);
     border-radius: 12px;
     border: 1px solid rgba(195, 173, 173, 0.03);
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 
     display: flex;
     flex-direction: column;
@@ -231,18 +231,10 @@ p span {
 }
 
 
-.card-side {
-    
-}
-
-.card img { 
-    width:300px;
-    border-radius: 12px;
-}
-
 .card:hover {
     transform: translateY(-5px);
     border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 5px 5px 25px rgba(99, 102, 241, 0.3);
 }
 
 .card:hover .card-title {
@@ -275,6 +267,49 @@ p span {
     text-align: center;
 }
 
+#link1{
+    background-image: url("imgs/coding.jpg");
+}
+#link2{
+    background-image: url("imgs/project_img.jpg");
+}
+#link3{
+    background-image: url("imgs/project_img2.jpg");
+}
+#link4{
+    background-image: url("imgs/pixabay_imgcard3.jpg");
+}
+
+
+
+
+.project-button {
+    background-size: cover;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    
+    width: 15vh;
+    aspect-ratio: 2/1;
+
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 0.75cqw;
+    color: rgba(255, 255, 255, 0.25);
+
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.project-button:hover {
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 5px 5px 25px rgba(74, 103, 231, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+
 .image-container {
     border-radius: 12px;
     height: 100%;
@@ -284,11 +319,20 @@ p span {
     min-width: 5rem;
 
     background-image: url("imgs/projectpic-website.jpg");
-    background-size: cover;
+    background-size:cover;
 
 }
 
 
+.project-desc-title {
+    font-size: 2rem;
+    margin-bottom: 0.3vw;   
+}
+
+.project-desc-description {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+}
 
 .row-1 {
     grid-column-start: 1;
