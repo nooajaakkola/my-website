@@ -26,8 +26,8 @@
     <section class="hero" id="about">
         <div class="hero-content">
             <span class="badge">Welcome to my website</span>
-            <h1>Next-Gen digital solutions.</h1>
-            <p>With the goal of paving the path to more modern, high-performance solutions tailored for both corporate- as well as individual clients.</p>
+            <h1>Next-Gen software development.</h1>
+            <p>Check out my other projects, get to know me and use the Contacts-form if you're interested in collaborating.</p>
             <div class="hero-buttons">
                 <a href="#info" class="btn-primary">About me</a>
                 <a href="#contact" class="btn-text">My projects &rarr;</a>
@@ -65,11 +65,45 @@
             <h2>My projects</h2>
         </div>
 
-        <div class="project-grid">
-            <div class="project-row row-1"></div>
-            <div class="project-row row-2"></div>
-            <div class="project-row row-3"></div>
-        </div>
+        <nav>
+            <a id="link1" onclick=" showProject('project1')">Project 1</a>
+            <a id="link2" onclick=" showProject('project2')">Project 2</a>
+            <a id="link3" onclick=" showProject('project3')">Project 3</a>
+            <a id="link4" onclick=" showProject('project4')">Project 4</a>
+        </nav>
+
+        <main>
+            <article id="project1" class="active projectCard">
+                
+            </article>
+
+            <article id="project2" class="projectCard">
+            
+            </article>
+
+            <article id="project3" class="projectCard">
+            
+            </article>
+
+            <article id="project4" class="projectCard">
+            
+            </article>
+        </main>
+
+        <script>
+            function showProject(id) {
+            const project = document.querySelectorAll('article');
+            project.forEach(project => {
+                project.classList.remove('active');
+            });
+
+            const selectedProject = document.getElementById(id);
+            if (selectedProject) {
+                selectedProject.classList.add('active');
+            }
+            }
+        </script>
+
     </section>
 
     <footer id="contact">
