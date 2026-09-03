@@ -42,22 +42,26 @@
             <p>Currently studying in <span>Centria UAS</span>, further expanding my knowledge of a <span>Software Engineer</span>.</p>
             <p>I built this website as a showcase of my achievements and projects, as well as a quick and easy way to <span>Contact me</span> in regards to possible <span>collaborations</span>.</p>
         </div>
-            
-        <div class="grid">
-            <div class="card card-side" style="background-image: url(imgs/duunari.jpg);">
-                <h2 class="card-title">Duunis</h2>
-            </div>
-            <div class="card" style="background-image: url(imgs/noojaakkola_imgcard.jpg);">
-                <div class="card-title">
-                    <h2>Nooa Jaakkola</h2>
-                    <p style="padding-bottom:4px;">Software Engineer</p>
+        
+        <div class="picture-section">
+            <div class="grid">
+                <div class="card" style="background-image: url(imgs/duunari.jpg);">
+                    <h2 class="card-title">Duunis</h2>
                 </div>
-                    
-            </div>
-            <div class="card card-side" style="background-image: url(imgs/ulkokuva.jpg);">
-                <h2 class="card-title">Ulkona</h2>
+                <div class="card" style="background-image: url(imgs/noojaakkola_imgcard.jpg);">
+                    <div class="card-title">
+                        <h2>Nooa Jaakkola</h2>
+                        <p>Software Engineer</p>
+                    </div>
+                        
+                </div>
+                <div class="card" style="background-image: url(imgs/ulkokuva.jpg);">
+                    <h2 class="card-title">Ulkona</h2>
+                </div>
             </div>
         </div>
+
+        
     </section>
 
     <section class="projects" id="projects">
@@ -69,24 +73,28 @@
             <a class="project-button" id="link1" onclick=" showProject('project1')">Website</a>
             <a class="project-button" id="link2" onclick=" showProject('project2')">Voice Assistant</a>
             <a class="project-button" id="link3" onclick=" showProject('project3')">Nutrient Calc</a>
-            <a class="project-button" id="link4" onclick=" showProject('project4')">Clicker Game</a>
+            <a class="project-button" id="link4" onclick=" showProject('project4')">Idle game</a>
         </nav>
 
         <main class="projectCard-container">
             <article id="project1" class="active projectCard">
-                
+                <h2>Website</h2>
+                <p>I created this website during the summer of 2026 as a kind of a showcase of my achievements and goals for the future.</p>
             </article>
 
             <article id="project2" class="projectCard">
-            
+                <h2>Voice Assistant</h2>
+                <p>This Ironman inspired voice assistant, which ran locally on my PC, could for example open and close certain apps in the background and play music through Spotify. All of this was controlled by simple voice commands that I had implemented.</p>
             </article>
 
             <article id="project3" class="projectCard">
-            
+                <h2>Nutrient Calculator</h2>
+                <p>As part of my education, created an app that I could use for calculating my caloric intake. You could add the macronutrients of any food of your liking. You could also add different foods to a meal and the program would give the complete amounts of macronutrients.</p>
             </article>
 
             <article id="project4" class="projectCard">
-            
+                <h2>Idle game</h2>
+                <p>Jonttu clicker video game. Very popular.</p>
             </article>
         </main>
 
@@ -108,11 +116,16 @@
 
     <footer id="contact">
         <div class="footer-content">
-            <h2>Let's build something great together.</h2>
-            <p>Ready to start your next project? Get in touch with us today.</p>
-            <a href="mailto:hello@yourdomain.com" class="btn-primary">Say Hello</a>
+            <h2>Let's link up!</h2>
+            <p>Interested in collaborating on a project? Get in touch with me today.</p>
+            <a href="mailto:jaakkolanooa@gmail.com" class="btn-primary">Email me</a>
+            <h3 style="padding: 1vw 1vw">or</h3>
+            <a href="https://www.linkedin.com/in/nooa-jaakkola-5395832ba/" class="btn-primary">Connect on LinkedIn</a>
             <div class="footer-bottom">
-                <p>&copy; 2026 Nooa Jaakkola. All rights reserved.</p>
+                
+                <p>&copy; <span id="year" class="footer-bottom"></span> Nooa Jaakkola. All rights reserved.</p>
+
+                <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
             </div>
         </div>
     </footer>

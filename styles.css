@@ -197,17 +197,22 @@ p span {
     font-size: 1.1rem;
 }
 
+.picture-section {
+    display:flex;
+    justify-content: center;
+}
+
 .grid {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1.3fr 1fr;
-    gap: 1rem;
+    width: 80%;
 }
 
 .card {
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 100%;
+    min-width: 90%;
     aspect-ratio: 1/1;
     background-color: var(--card-bg);
     border-radius: 12px;
@@ -220,7 +225,7 @@ p span {
 }
 
 .card-title {
-    
+    align-items: baseline;
     padding-left: 0.5rem;
     opacity: 1;
     display:flex;
@@ -241,20 +246,14 @@ p span {
     opacity: 1;
 }
 
-.card-icon {
-    font-size: 2rem;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-}
-
-.card h3 {
-    font-size: 1.35rem;
-    margin-bottom: 1rem;
+.card h2 {
+    font-size: 1.25rem;
 }
 
 .card p {
     color: var(--text-muted);
     font-size: 0.95rem;
+    margin-bottom: 0.1rem;
 }
 
 /* --- Projects Section --- */
