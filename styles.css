@@ -332,23 +332,27 @@ p span {
 
 }
 
+.projectCard h2 {
+    font-weight:bold;
+}
+
 #project1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/coding.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/coding.jpg");
     background-size: cover;
     background-position: center;
 }
 #project2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/project_img.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/project_img.jpg");
     background-size: cover;
     background-position: center;
 }
 #project3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/project_img2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/project_img2.jpg");
     background-size: cover;
     background-position: center;
 }
 #project4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/pixabay_imgcard3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/pixabay_imgcard3.jpg");
     background-size: cover;
     background-position: center;
 }
